@@ -8,16 +8,22 @@
   </head>
   <style>
     :root {
+    --penguin-size: 300px;
+    --penguin-skin: gray;
+    --penguin-belly: white;
+    --penguin-beak: orange;
+  }
+
+  @media (max-width: 350px) {
+    :root {
       /* Only change code below this line */
-      --penguin-belly: pink;                /* Inherit CSS Variables */        
-  
+      --penguin-size: 200px;                  /* Use a media query to change a variable */
+      --penguin-skin: black;
+
       /* Only change code above this line */
     }
-  
-    body {
-      background: var(--penguin-belly, #c6faf1);
-    }
-  
+  }
+
     .penguin {
         /* Only change code below this line */
        --penguin-belly: white;                 /* Change a variable for a specific area */
